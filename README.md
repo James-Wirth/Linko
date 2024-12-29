@@ -19,6 +19,8 @@ cd Linko
 bash start_servers.sh
 ```
 
+The setup script will:
+
 1. Install backend dependencies using `pip` and setup a virtual environment.
 2. Install frontend dependencies using `npm install`
 3. Start the backend (Flask) server on port `5000`
