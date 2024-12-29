@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './WordInput.css';
 
 function WordInput({ onAddWord }) {
     const [input, setInput] = useState('');
@@ -12,14 +13,15 @@ function WordInput({ onAddWord }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="word-input-form" onSubmit={handleSubmit}>
             <input
+                className="word-input"
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Enter a word"
             />
-            <button type="submit">Add Word</button>
+            <button className="add-word-button" type="submit">Add Word</button>
         </form>
     );
 }

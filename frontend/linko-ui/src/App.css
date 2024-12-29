@@ -1,38 +1,49 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Centers text inside child elements */
+}
+
+/* App container */
 .App {
-  text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all child content horizontally */
+    justify-content: flex-start; /* Ensures content starts from the top */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Main content styles */
+.App-main {
+    flex: 1; /* Makes main content take up remaining vertical space */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers GameBoard horizontally */
+    align-items: flex-start; /* Aligns GameBoard to the top of the main area */
+    padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* GameBoard styles */
+.GameBoard {
+    max-width: 800px;
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Optional responsiveness */
+@media (max-width: 768px) {
+    .GameBoard {
+        padding: 0.5rem; /* Reduced padding for smaller screens */
+    }
 }

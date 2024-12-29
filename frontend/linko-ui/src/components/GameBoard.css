@@ -1,0 +1,39 @@
+.game-board {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.word-chain {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.chain-display {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #0073e6;
+}
+
+.feedback-section {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.feedback {
+    font-size: 1rem;
+    color: #555;
+}
+
+.similarity-score {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #28a745;
+}

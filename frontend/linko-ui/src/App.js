@@ -4,8 +4,9 @@ import GameBoard from './components/GameBoard';
 function App() {
     return (
         <div className="App">
-            <h1>Linko</h1>
-            <GameBoard />
+            <main className="App-main">
+                <GameBoard />
+            </main>
         </div>
     );
 }
